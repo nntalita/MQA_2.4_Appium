@@ -44,6 +44,7 @@ public class AppTest {
         mainScreenUIAutomator.textToBeChanged.isDisplayed();
         Assertions.assertEquals(textToSet, mainScreenUIAutomator.textToBeChanged.getText());
         mainScreenUIAutomator.userInput.clear();
+        mainScreenUIAutomator.userInput.sendKeys("");
         mainScreenUIAutomator.buttonChange.click();
         Assertions.assertEquals(textToSet, mainScreenUIAutomator.textToBeChanged.getText());
     }
